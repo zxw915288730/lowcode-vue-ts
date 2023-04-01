@@ -15,7 +15,8 @@ jobs:
     test:
         runs-on: ubuntu-latest
         steps:
-            - uses: actions/checkout
+            - name: CheckOut
+              uses: actions/checkout@v3
             - name: Use Node.js
               uses: actions/setup-node@v1
               with:
